@@ -1,0 +1,14 @@
+----------------------------------------------------------------------------------
+Every thing in this project are from zero to one 
+----------------------------------------------------------------------------------
+
+step-1: create backend folder and a readmi file
+step-2: to create react app, run in powershell npx create-react-app medantrik
+step-3: cd backend, to create backend , run npm init
+step-4: intall packages
+            1. mongoose -: an abstraction layer to connect backend to mongodb , run npm i mongoose
+            2. create index.js entry point of our application
+step-5: remove / frome gitignore file as you donot need to push
+step-6: For npm install specific version, use npm install [package-name]@[version-number]
+            npm install express@4.18.2- Express.js, is a back end web application framework for building RESTful APIs with Node.js
+step-7: make db.js so that seperate file that deals with database
