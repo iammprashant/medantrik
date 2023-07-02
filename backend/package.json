@@ -1,0 +1,14 @@
+{
+  "name": "medantrik",
+  "version": "1.0.0",
+  "description": "medantrik - Empowering health care through innovation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "prashantHbtu",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^7.3.1"
+  }
+}
