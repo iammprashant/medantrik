@@ -6,9 +6,16 @@ step-1: create backend folder and a readmi file
 step-2: to create react app, run in powershell npx create-react-app medantrik
 step-3: cd backend, to create backend , run npm init
 step-4: intall packages
-            1. mongoose -: an abstraction layer to connect backend to mongodb , run npm i mongoose
+            1. mongoose -: an abstraction layer to connect backend to mongodb , run npm i mongoose@6.10.1
             2. create index.js entry point of our application
 step-5: remove / frome gitignore file as you donot need to push
 step-6: For npm install specific version, use npm install [package-name]@[version-number]
             npm install express@4.18.2- Express.js, is a back end web application framework for building RESTful APIs with Node.js
 step-7: make db.js so that seperate file that deals with database
+        and create database medantrik in mongocompass , and collections notes and users
+step-8: install nodemon - npm i -D nodemon - here D for use only in developing time
+        nodemon .\index.js\ -> to run nodejs server
+step-9: create models folder : Models are used by moongoose, telling that how data and type of data stored in mongodb
+        database ke ander collections ke ander documents ie json just like how table structure are there in database
+        inside this folder create file with capitalise name
+step-9: create routes folder
