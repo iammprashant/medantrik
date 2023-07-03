@@ -25,4 +25,4 @@ const NotesSchema = new Schema({
     
 });
 
-module.exports = mongoose.model('notes', NotesSchema);
+module.exports = mongoose.model('notes', NotesSchema);//notes here used is a collection name in database medantrik

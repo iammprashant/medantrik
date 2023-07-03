@@ -2,6 +2,10 @@
 Every thing in this project are from zero to one 
 ----------------------------------------------------------------------------------
 
+More Works on the Project: google sign in , email otp sign in up, .env file creation
+
+COMMON: npm install command used to install existing project
+
 step-1: create backend folder and a readmi file
 step-2: to create react app, run in powershell npx create-react-app medantrik
 step-3: cd backend, to create backend , run npm init
@@ -27,7 +31,7 @@ step-9: create routes folder
 step-10: install express- validator pkg which helps in validation of sign up and sign in data 
         npm install --save express-validator@6.12.1
         check points is in square bracket [], which is a array
-        Using this user.save() is used as User.create
+        Using this user.save() is used as User.create , Basically save() function is used save data in database
         *To block duplicate entry of unique email we can use indexing but we use findone() function
 step-11: To save data in mongdb we use: 
         const user = User(req.body);
@@ -35,4 +39,22 @@ step-11: To save data in mongdb we use:
 step-12: create thunderclient collection medantrik and then authentication, Notes-CRUD  : Export the data and push to github
          
          QUES: What is logger and SQS in case of try and catch
-step-13: 
+step-13: install bcryptjs it deals with password security in database by hashing,salting,peppering
+        npm install bcryptjs@2.4.3
+
+        NOTE: Mark callback function as async whenever you use await bcoz it returns a promise which should be resolve
+step-14: whenever a user login into their accounts we give tokens: two types session and json web token
+         here we use jwt token: A way to verify a user without entering password (algorithm, data ie userid, signature)
+         JWT_SECRET is use by server to sign the token for particular user 
+         it fasciliates client-server communication
+         npm install jsonwebtoken@9.0.0
+
+         NOTE: select("-password") means select all element except password
+step-15: To remove the problems of id lene ka code write at every end points we us middleware
+         *To make application scalable, means once sign in and use all the services of application
+         * Nodejs Middleware is a function which is called wherever any request goes to login required(or to get logged in 
+         user detail) routes
+step-16: Make a folder middleware , create a file fetchuser.js
+        next() tells that next (req,res) will be run
+        JWT_SECRET should not mis-match anywhere
+step-17: params.id is a specific note id not user id;
