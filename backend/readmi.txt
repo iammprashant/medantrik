@@ -19,3 +19,20 @@ step-9: create models folder : Models are used by moongoose, telling that how da
         database ke ander collections ke ander documents ie json just like how table structure are there in database
         inside this folder create file with capitalise name
 step-9: create routes folder
+        routes are used to create api link
+        create two files auth.js and notes.js
+        auth.js deals with sign in, sign up purpose
+        notes.js deals to preview the notes of particular users
+        NOTE: app.use(express.json());// to use req.body, it is a middleware. in index.js file
+step-10: install express- validator pkg which helps in validation of sign up and sign in data 
+        npm install --save express-validator@6.12.1
+        check points is in square bracket [], which is a array
+        Using this user.save() is used as User.create
+        *To block duplicate entry of unique email we can use indexing but we use findone() function
+step-11: To save data in mongdb we use: 
+        const user = User(req.body);
+        user.save(); XXXXXXXXXXXXXXX
+step-12: create thunderclient collection medantrik and then authentication, Notes-CRUD  : Export the data and push to github
+         
+         QUES: What is logger and SQS in case of try and catch
+step-13: 
