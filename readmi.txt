@@ -1,29 +1,45 @@
-----------------------------------------------------------------------------------
+i----------------------------------------------------------------------------------
 Every thing in this project are from zero to one 
 ----------------------------------------------------------------------------------
 
-More Works on the Project: google sign in , email otp sign in up, .env file creation
+Prerequisite: Install node js(npm install automatically),Vs code(es7 react/redux graph, backet pair coloriser, auto rename tag,
+live server, prettier), react dev tool chrome extension, thunderclient/postman,
 
-COMMON: npm install command used to install existing project
+More Works on the Project: google sign in , email otp sign in up, .env file creation, IOT communication to database
+
+COMMON: npm install command used to install the application requirement
+        npm start -> to start react app
+        nodemon .\index.js\ -> to run nodejs server
+
+-------------
+Backend
+-------------
 
 step-1: create backend folder and a readmi file
 step-2: to create react app, run in powershell npx create-react-app medantrik
 step-3: cd backend, to create backend , run npm init
 step-4: intall packages
             1. mongoose -: an abstraction layer to connect backend to mongodb , run npm i mongoose@6.10.1
+            mongoose - helps to connect node js to mongodb
+            database -> as in sql
+            collections -> tables
+            documents -> table data ie. in json format in mongodb
+
             2. create index.js entry point of our application
 step-5: remove / frome gitignore file as you donot need to push
 step-6: For npm install specific version, use npm install [package-name]@[version-number]
             npm install express@4.18.2- Express.js, is a back end web application framework for building RESTful APIs with Node.js
+            expressjs - helps in api fuctioning
 step-7: make db.js so that seperate file that deals with database
         and create database medantrik in mongocompass , and collections notes and users
 step-8: install nodemon - npm i -D nodemon - here D for use only in developing time
+        nodemon - use for npm start and stop automatically
         nodemon .\index.js\ -> to run nodejs server
 step-9: create models folder : Models are used by moongoose, telling that how data and type of data stored in mongodb
         database ke ander collections ke ander documents ie json just like how table structure are there in database
         inside this folder create file with capitalise name
 step-9: create routes folder
-        routes are used to create api link
+        routes are used to create api link,routes are used to make end points and whats we gave/response on hitting that api
         create two files auth.js and notes.js
         auth.js deals with sign in, sign up purpose
         notes.js deals to preview the notes of particular users
@@ -31,12 +47,15 @@ step-9: create routes folder
 step-10: install express- validator pkg which helps in validation of sign up and sign in data 
         npm install --save express-validator@6.12.1
         check points is in square bracket [], which is a array
+        express validator -> used for validation at time of data saving in database
         Using this user.save() is used as User.create , Basically save() function is used save data in database
         *To block duplicate entry of unique email we can use indexing but we use findone() function
 step-11: To save data in mongdb we use: 
         const user = User(req.body);
         user.save(); XXXXXXXXXXXXXXX
 step-12: create thunderclient collection medantrik and then authentication, Notes-CRUD  : Export the data and push to github
+         thunderclient - works as postman in vs code
+         CRUD operation -> create, read, update, delete
          
          QUES: What is logger and SQS in case of try and catch
 step-13: install bcryptjs it deals with password security in database by hashing,salting,peppering
@@ -58,3 +77,49 @@ step-16: Make a folder middleware , create a file fetchuser.js
         next() tells that next (req,res) will be run
         JWT_SECRET should not mis-match anywhere
 step-17: params.id is a specific note id not user id;
+
+
+
+----------------
+Frontend
+----------------
+React is used for making single page applications
+COMMON: npm run build optimized version of reactjs code which you will host
+
+step-1: delete unwanted files and their imports in any other files
+step-2: install npm i react-router-dom@6.8.2 concurrently@7.6.0
+        concurrently helps in Run multiple commands concurrently.
+        react-router-dom helps in creating links of web pages
+step-3: put "both": "concurrently \"npm run start\" \"nodemon backend/index.js\" " in outer package.json file 
+        where scripts are given
+-----------------
+GYAN
+-----------------
+
+         What is JSX: ek html hai, jisne JavaScript ka mukut pahana hai, bcoz react developers thinks that donot use different
+        html,css, JavaScript files.
+        
+
+        NOTE: React ke andar jsx use ho rha hai to ek hi component/element return hoga
+                To remve this problem use, jsx fragment <>  </>         
+                *Closing tag is important <img> </img> for every tags of html
+
+step-4: favicon generator @ favicon.io 
+step-5: Adding bootstrap to reactjs
+                Add bootstrap css link in head tag and JavaScript link in body tag of public-> index.html 
+                and remove index.css data 
+                now copy and paste from bootstrap
+                and
+                JavaScript are written in curly brraces {}.
+                And here written as....
+                Switch -> Routes
+                input, hr -> / add to end
+                class -> className   // REACT prefer camel case
+                a -> lInk
+                link -> Link
+                href -> to
+                # -> /
+                for -> htmlFor
+                useHistory -> useNavigate
+step-6: In this project we will use - npm install react-bootstrap bootstrap and css to app.js
+step-7: 
