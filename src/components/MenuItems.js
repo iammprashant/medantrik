@@ -23,12 +23,7 @@ export const MenuItems = [
         cName:"nav-links",
         icon:"fa-sharp fa-solid fa-square-rss"
     },
-    // {
-    //     title:"Career",
-    //     url:"/career",
-    //     cName:"nav-links",
-    //     icon:"fa-solid fa-stairs"
-    // },
+    
     {
         title:"Contact Us",
         url:"/contact",
@@ -37,8 +32,8 @@ export const MenuItems = [
     },
     
     {
-        title:"Sign Up",
-        url:"/signup",
+        title:"Sign in",
+        url:"/signin",
         cName:"nav-links-mobile",
         icon:"fa-solid fa-user-plus"
     }

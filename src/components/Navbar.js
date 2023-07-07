@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from "react-router-dom";
 import "./NavbarStyles.css"
 import { MenuItems } from './MenuItems'
 
@@ -12,7 +13,7 @@ const Navbar = () => {
 
         <nav className='NavbarItems'>
             <div className='navbar-logo'>
-              <a  href='/'><img src="logo192.png" alt='logo'  />Medantrik</a>   
+              <Link  to='/'><img src="logo192.png" alt='logo'  />Medantrik</Link>   
             </div>
            <div className="menu-icons" onClick={handleClick}>
             <i className={clicked ? "fas fa-times": "fas fa-bars"} ></i>
@@ -22,13 +23,13 @@ const Navbar = () => {
                 {MenuItems.map((item, index) => {
                     return (
                         <li key={index}>
-                            <a className={item.cName} href={item.url}><i className={item.icon}></i>{item.title}</a>
+                            <Link className={item.cName} to={item.url}><i className={item.icon}></i>{item.title}</Link>
                         </li> 
                     )
                 })}
                 
             </ul>
-            <button >Sign Up</button>
+            <button >Sign in</button>
         </nav>
     )
 }

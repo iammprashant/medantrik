@@ -1,4 +1,5 @@
 .NavbarItems{
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +45,7 @@
 .nav-links{
     text-decoration: none;
     color: #222;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     padding: 0.7rem 1rem;
     white-space: nowrap;
@@ -78,7 +79,7 @@ button{
 }
 
 button:hover{
-    background-color: #F266AB;
+    background-color: #a459d1;
     color: #fff;
 }
 
@@ -139,7 +140,7 @@ button:hover{
         margin: auto;
         border-radius: 4px;
         width: 80%;
-        background: #F266AB;
+        background: #a459d1;
         text-decoration: none;
         color: #fff;
         font-size: 1.2rem;
