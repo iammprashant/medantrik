@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./NavbarStyles.css"
 import { MenuItems } from './MenuItems'
 
@@ -7,6 +7,11 @@ const Navbar = () => {
     const [clicked,setClicked] = useState(false)
     const handleClick = event =>{
         setClicked(current => !current)
+    }
+
+    const navigate = useNavigate();
+    const navigateToLogin = ()=>{
+        navigate('/signin');
     }
     
     return (
@@ -29,7 +34,7 @@ const Navbar = () => {
                 })}
                 
             </ul>
-            <button >Sign in</button>
+            <button onClick={navigateToLogin}>Sign in</button>
         </nav>
     )
 }

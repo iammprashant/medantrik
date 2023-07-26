@@ -7,7 +7,7 @@ import About from './routes/About';
 import Product from './routes/Product';
 import Blog from './routes/Blog';
 import Contact from './routes/Contact';
-
+import Signin from './routes/Signin';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
           <Route path="/product" element={<Product/>}></Route>
           <Route path="/blog" element={<Blog/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
+          <Route path="/signin" element={<Signin/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

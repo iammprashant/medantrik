@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import HomeImg from '../assets/1.jpg'
+import HomeImg from '../assets/medpic2.jpg'
 import Footer from '../components/Footer';
 
-const home = () => {
+const Home = () => {
   return (
     <>
       <Navbar/>
@@ -15,4 +15,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home
