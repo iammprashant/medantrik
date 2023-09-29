@@ -1,6 +1,7 @@
 // connecting to database
+require('dotenv').config({path: __dirname + '/.env'})
 const mongoose = require('mongoose');
-const mongoURI = "mongodb://localhost:27017/medantrik";
+const mongoURI = process.env.DATABASE;
 mongoose.set('strictQuery', true);// To remove deprecation warning
 
 const connectToMongo = ()=>{//arrow function
