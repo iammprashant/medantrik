@@ -1,0 +1,1 @@
+// fetching all crud api for accessing anywhere

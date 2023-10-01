@@ -9,11 +9,13 @@ import Blog from './routes/Blog';
 import Contact from './routes/Contact';
 import Signin from './routes/Signin';
 
+
 function App() {
+
+
   return (
     <div className='App'>
       <BrowserRouter>
-        
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/about" element={<About/>}></Route>

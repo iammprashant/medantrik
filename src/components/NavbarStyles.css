@@ -23,6 +23,7 @@
 .navbar-logo img{
     width: 50px;
     margin-right: 4px;
+    filter: brightness(1);
 }
 
 .navbar-logo a{
@@ -40,6 +41,7 @@
     grid-gap: 10px;
     list-style: none;
     align-items: center;
+    margin:3px 10px 0 0;
 }
 
 .nav-links{

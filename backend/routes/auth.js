@@ -116,7 +116,7 @@ router.post('/login', [
 					token: crypto.randomBytes(32).toString("hex"),
 				}).save();
 				const url = `${process.env.BASE_URL}api/auth/${user.id}/verify/${token.token}`;
-				await sendEmail(user.email, "Verify Email", url);
+				await sendEmail(user.email, "An Email sent to your account please verify", url);
 			}
 
 			return res.status(400).send({ message: "An Email sent to your account please verify" });
