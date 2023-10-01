@@ -13,6 +13,11 @@ const Navbar = () => {
     const navigateToLogin = ()=>{
         navigate('/signin');
     }
+
+    const handleSignout = ()=>{
+        localStorage.removeItem('token');
+        navigate("/");
+      }
     
     return (
 
@@ -34,7 +39,7 @@ const Navbar = () => {
                 })}
                 
             </ul>
-            <button onClick={navigateToLogin}>Sign in</button>
+            {!localStorage.getItem('token')?<button onClick={navigateToLogin}>Sign in</button>:<button onClick={handleSignout}>Sign out</button>}
         </nav>
     )
 }
