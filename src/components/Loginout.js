@@ -22,7 +22,7 @@ const Loginout = () => {
         console.log(json);
         if (response.ok){
             // Save the auth token and redirect
-            localStorage.setItem('token', json.authToken); 
+            localStorage.setItem('token', json.authtoken); 
             navigate("/blog");
             //props.showAlert("Logged in Successfully", "success");
             alert("Sign in Successfully")
@@ -53,7 +53,7 @@ const Loginout = () => {
         console.log(json);
         if (response.ok){
             // Save the auth token and redirect
-            //localStorage.setItem('token', json.authtoken); //there is no need to give token 
+            // localStorage.setItem('token', json.authtoken); //there is no need to give token 
             alert("A link sent to Your email Please verify")
            // props.showAlert("Account Created Successfully", "success");
 
