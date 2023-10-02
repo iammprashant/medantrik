@@ -11,7 +11,7 @@ const Loginout = () => {
 //Sign in
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch("http://localhost:5000/api/auth/login", { 
+        const response = await fetch("https://medantrikbackend.onrender.com/api/auth/login", { 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -42,7 +42,7 @@ const Loginout = () => {
     const handleSubmit2 = async (e) => {
         e.preventDefault();
        const {name, email, password} = credentials;
-        const response = await fetch("http://localhost:5000/api/auth/createuser", { 
+        const response = await fetch("https://medantrikbackend.onrender.com/api/auth/createuser", { 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

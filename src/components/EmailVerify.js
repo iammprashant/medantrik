@@ -10,7 +10,7 @@ const EmailVerify = () => {
 		const verifyEmailUrl = async () => {
 			try {
 				
-                const response = await fetch(`http://localhost:5000/api/auth/${param.id}/verify/${param.token}`, { 
+                const response = await fetch(`https://medantrikbackend.onrender.com/api/auth/${param.id}/verify/${param.token}`, { 
                 method: 'GET',
                 headers: {
                 'Content-Type': 'application/json'
