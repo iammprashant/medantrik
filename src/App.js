@@ -11,6 +11,7 @@ import Blog from './routes/Blog';
 import Contact from './routes/Contact';
 import Signin from './routes/Signin';
 import NoteState from './context/notes/NoteState';
+import EmailVerify from "./components/EmailVerify";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/blog" element={<Blog showAlert= {showAlert}/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
           <Route path="/signin" element={<Signin/>}></Route>
+          <Route path="/api/auth/:id/verify/:token" element={<EmailVerify/>} />
         </Routes>  
       </BrowserRouter>
       </NoteState>
