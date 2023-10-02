@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams, Link} from "react-router-dom";
-import styles from "./EmailVerifyStyles.css";
+///import styles from "./EmailVerifyStyles.css";
 
 const EmailVerify = () => {
-	const [validUrl, setValidUrl] = useState(true);
+	const [validUrl, setValidUrl] = useState(false);
 	const param = useParams();
 
 	useEffect(() => {
@@ -17,11 +17,10 @@ const EmailVerify = () => {
             }
                 });
                 if(response.ok){
-				setValidUrl(false);
+				setValidUrl(true);
                 }
 			} catch (error) {
 				console.log(error);
-				setValidUrl(true);
 			} 
 		};
 		verifyEmailUrl();
@@ -30,11 +29,11 @@ const EmailVerify = () => {
 	return (
 		<>
 			{validUrl ? (
-				<div className={styles.container}>
+				<div >
 					
 					<h1>Email verified successfully</h1>
 					<Link to="/signin">
-						<button className={styles.green_btn}>sign in</button>
+						<button >sign in</button>
 					</Link>
 				</div>
 			) : (
