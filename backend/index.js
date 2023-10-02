@@ -1,10 +1,11 @@
 const connectToMongo = require('./db');
+require('dotenv').config({path: __dirname + '/.env'})
 const express = require('express');
 var cors = require('cors')
 
 connectToMongo();
 const app = express()
-const port = 5000 //port 3000 for react app
+const port = 5000 || process.env.PORT; //port 3000 for react app
 
 
 app.use(cors())
