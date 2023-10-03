@@ -41,7 +41,7 @@ function App() {
         </Routes>  
       </BrowserRouter>
       </NoteState>
-    </div>
+    </div> 
   );
 }
 

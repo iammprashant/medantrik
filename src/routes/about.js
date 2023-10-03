@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import AboutImg from '../assets/night.jpg'
+import Aboutus from '../components/AboutUs'
 
 
 const about = () => {
@@ -12,7 +13,8 @@ const about = () => {
     <Hero cName="hero-mid" heroImg={AboutImg} 
       title="About Us" 
       url="/" btnClass="hide"/>
-      <Footer/>
+    <Aboutus/>
+    <Footer/>
     </>
   )
 }
