@@ -1,27 +1,27 @@
-import Mountain1 from "../assets/1.jpg";
-import Mountain2 from "../assets/2.jpg";
-import Mountain3 from "../assets/5.jpg";
-import Mountain4 from "../assets/8.jpg";
+import Mountain1 from "../assets/ometer.jpeg";
+import Mountain2 from "../assets/ometer2.jpeg";
+import Mountain3 from "../assets/ocon.jpeg";
+import Mountain4 from "../assets/ocon2.jpeg";
 import DestinationData from "./DestinationData";
 import "./DestinationStyles.css";
 
 const Destination = () => {
   return (
     <div className="destination">
-      <h1>Popular Destination </h1>
-      <p>Tours give you the opportunity to see a lot, within a time frame .</p>
+      <h1>Medical Devices </h1>
+      <p>Medical Device Technology Is Truly Interdisciplinary</p>
       <DestinationData
       className="first-des"
-      heading="Taal volcano, Batagas"
-      text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam, sed amet sequi ut praesentium deleniti maiores quo beatae! Quisquam cum ipsum quasi suscipit deserunt illo vitae corporis! Consequuntur, eius."
+      heading="Oxygen Purity Meter"
+      text="PORTABLE PERCENT OXYGEN Analyser This model has been specifically designed for spot-checking oxygen levels in anesthesia, intensive care, incubators, or other variants of respiratory or oxygen therapy. Tabel-Top, battery-powered device that measures the oxygen concentration in a flow of gas from a medical gas source or, with adaptors. The intended application is checking gas supply equipment performance."
       img1={Mountain1}
       img2={Mountain2}
       
       />
        <DestinationData
        className="first-des-reverse"
-      heading="Taal volcano, Batagas"
-      text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam, sed amet sequi ut praesentium deleniti maiores quo beatae! Quisquam cum ipsum quasi suscipit deserunt illo vitae corporis! Consequuntur, eius."
+      heading="Oxygen Concentrator"
+      text="Oxygen concentrators are a common treatment for people with chronic obstructive pulmonary disease (COPD), asthma, and other respiratory conditions. They can also be used for people who need supplemental oxygen due to other medical conditions, such as heart failure or pneumonia."
       img1={Mountain3}
       img2={Mountain4}
       

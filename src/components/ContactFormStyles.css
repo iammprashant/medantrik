@@ -1,1 +1,170 @@
-/* Style your components */
+
+#contact{
+    padding: 2rem;
+}
+#contact h1{
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+}
+.contactElements{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container.contact_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact_options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact_option{
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid rgb(9, 9, 9);
+    min-width: 200px;
+    box-shadow: 0 5px 15px 0 rgb(0,0,0,.25);
+    margin-bottom: 1rem;
+}
+
+.contact_option:hover{
+    transform: scale(105%);
+}
+
+.contact_option-icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact_option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+/* **********************form******** */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    min-width: 50%;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+    height: 90px;
+    border: 2px solid rgb(11, 11, 11);
+    resize: vertical;
+    color: rgb(4, 3, 3);
+}
+
+/*foot*/
+.foot{
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.foot-container{
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+}
+
+.left{
+    height: 100%;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.location .phone{
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+
+.location p{
+    line-height: 30px;
+}
+
+.right{
+    height: 100%;
+    max-width: 86%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+
+h4{
+    font-size: 1.2rem;
+    padding-bottom: 0.7rem;
+
+}
+
+p{
+    font-size: 1rem;
+}
+
+
+.iconbox{
+    margin: 0 1rem;
+}
+
+.coding-profile{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+.iconbox:hover{
+    transform: scale(110%);
+}
+@media screen and (max-width : 640px) {
+    .foot-container{
+        grid-template-columns: 1fr;
+    }
+
+    
+    .iconbox:hover{
+        transform: none;
+    }
+}
+
+
+@media screen and (max-width:680px) {
+    .container.contact_container{
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    form{
+        width: 90vw;
+    }
+
+    .contact_option{
+       width: 90vw;
+    }
+
+    .contact_option:hover{
+        transform: none;
+    }
+}
